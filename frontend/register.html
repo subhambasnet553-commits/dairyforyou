@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="login_page">
+      <form id="registerForm">
+        <p class="title">Create Account</p>
+        <div>
+          <input type="text" placeholder="First Name" required class="firstname" id="firstName">
+        </div>
+        <div>
+          <input type="text" placeholder="Last Name" required class="lastname" id="lastName">
+        </div>
+        <div>
+          <input type="email" placeholder="Email" required class="email" id="email">
+        </div>
+        <div>
+          <input type="password" placeholder="Create Password" required class="password" id="password">
+        </div>
+        <div>
+          <input type="password" placeholder="Confirm Password" required class="conpassword" id="confirmPassword">
+        </div>
+        <p id="errorMsg" style="color: #ffb3b3; font-size: 13px; margin-left: 13px; display: none;"></p>
+        <button type="submit" class="cacc">Create Account</button>
+        <p class="back">Already have an account? <a href="structure.html">login!</a></p>
+      </form>
+      <div class="legal-footer-links">
+        <a href="terms.html">Terms</a>·<a href="privacy.html">Privacy</a>·<a href="copyright.html">Copyright</a>
+      </div>
+    </div>
+
+    <script src="decor.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

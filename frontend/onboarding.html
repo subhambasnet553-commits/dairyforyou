@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Set Up Your Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <div class="home_page">
+      <p class="home-title">Welcome! Let's set up your profile</p>
+      <p class="onboarding-sub">Totally optional — you can always do this later.</p>
+
+      <div class="onboarding-panel">
+        <div class="avatar-wrap">
+          <img id="avatarPreview" class="avatar-preview" src="" style="display:none;" />
+          <div id="avatarPlaceholder" class="avatar-placeholder"><i class='bx bxs-user-circle'></i></div>
+          <label for="avatarInput" class="avatar-upload-btn"><i class='bx bx-camera'></i></label>
+          <input type="file" id="avatarInput" accept="image/*" style="display:none;">
+        </div>
+
+        <label class="profile-label">Bio</label>
+        <textarea id="bioInput" class="bio-textarea" maxlength="280" placeholder="Tell your partner a little about you..."></textarea>
+        <p class="bio-count"><span id="bioCount">0</span>/280</p>
+      </div>
+
+      <button id="saveBtn" class="huge-btn primary">Save & Continue</button>
+      <button id="skipBtn" class="skip-link">Fill later</button>
+      <p id="onboardingMsg" class="write-msg" style="display:none;"></p>
+    </div>
+
+    <script src="decor.js"></script>
+    <script src="onboarding.js"></script>
+  </body>
+</html>

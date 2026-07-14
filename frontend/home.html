@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dairy for You</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <button class="profile-btn" id="profileBtn" title="Profile">
+      <i class='bx bxs-user-circle'></i>
+    </button>
+
+    <div class="home_page" id="app">
+
+      <div id="loadingState">
+        <p class="home-title">Loading...</p>
+      </div>
+
+      <div id="homeContent" style="display:none;">
+        <p class="home-title">Dairy for You</p>
+
+        <!-- Not paired yet -->
+        <div id="pairSection" style="display:none;">
+          <button type="button" class="huge-btn primary" id="pairToggleBtn">
+            <i class='bx bxs-heart'></i> Pair With Someone
+          </button>
+
+          <div id="pairPanel" class="pair-panel" style="display:none;">
+            <p class="my-code-label">Your code</p>
+            <p class="my-code" id="myCode">------</p>
+            <button class="copy-btn" id="copyCodeBtn"><i class='bx bx-copy'></i> Copy</button>
+
+            <div class="pair-divider">or</div>
+
+            <form id="pairForm">
+              <input type="text" placeholder="Enter their code" required class="pair-input" id="partnerCodeInput" maxlength="6">
+              <button type="submit" class="huge-btn primary panel-submit-btn">Connect</button>
+            </form>
+
+            <p id="pairError" class="error-text" style="display:none;"></p>
+          </div>
+        </div>
+
+        <!-- Paired -->
+        <div id="pairedSection" style="display:none;">
+          <div class="huge-btn primary timer-huge">
+            <p class="timer-label-huge">Together for</p>
+            <p class="timer-value-huge" id="timerValue">-- days</p>
+          </div>
+          <p class="paired-with-text" id="pairedWithText"></p>
+        </div>
+
+        <!-- Row of buttons -->
+        <div class="button-row">
+          <button class="huge-btn row-btn" id="writeBtn" style="display:none;">
+            <i class='bx bx-edit'></i>
+            <span>Write something for your loved one</span>
+          </button>
+          <button class="huge-btn row-btn" id="quizBtn">
+            <i class='bx bx-image-alt'></i>
+            <span>Couple's Quiz</span>
+          </button>
+          <button class="huge-btn row-btn" id="calendarBtn">
+            <i class='bx bx-calendar-heart'></i>
+            <span>Our Calendar</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="decor.js"></script>
+    <script src="profile.js"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

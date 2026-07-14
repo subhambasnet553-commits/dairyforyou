@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <button class="profile-btn" id="profileBtn" title="Profile"><i class='bx bxs-user-circle'></i></button>
+
+    <div class="diary_page" id="app">
+      <div id="loadingState">
+        <p class="title">Loading...</p>
+      </div>
+
+      <div id="calendarSection" style="display:none;">
+        <a href="home.html" class="back-link"><i class='bx bx-arrow-back'></i> Home</a>
+        <p class="title">Our Calendar</p>
+
+        <div class="write-box">
+          <label class="profile-label">Type</label>
+          <select id="eventType" class="event-select">
+            <option value="birthday">🎂 Birthday</option>
+            <option value="anniversary">💍 Anniversary</option>
+            <option value="special">✨ Special Day</option>
+            <option value="plan">📅 Propose a Plan</option>
+          </select>
+
+          <label class="profile-label">Title</label>
+          <input type="text" id="eventTitle" class="pair-input event-input" placeholder="e.g. Her birthday, Movie night...">
+
+          <label class="profile-label">Date</label>
+          <input type="date" id="eventDate" class="pair-input event-input">
+
+          <button id="addEventBtn" class="cacc entry-submit-btn">Add to Calendar</button>
+          <p id="eventMsg" class="write-msg" style="display:none;"></p>
+        </div>
+
+        <div id="pendingPlans"></div>
+
+        <p class="section-label">Upcoming</p>
+        <div id="eventsList" class="entries-list"></div>
+      </div>
+    </div>
+
+    <script src="decor.js"></script>
+    <script src="profile.js"></script>
+    <script src="calendar.js"></script>
+  </body>
+</html>

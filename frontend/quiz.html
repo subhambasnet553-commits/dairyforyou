@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Couple's Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+    <button class="profile-btn" id="profileBtn" title="Profile"><i class='bx bxs-user-circle'></i></button>
+
+    <div class="diary_page" id="app">
+      <div id="loadingState">
+        <p class="title">Loading...</p>
+      </div>
+
+      <div id="quizSection" style="display:none;">
+        <a href="home.html" class="back-link"><i class='bx bx-arrow-back'></i> Home</a>
+        <p class="title">Couple's Quiz</p>
+        <p class="subtitle" id="quizSubtitle">See how well you know each other.</p>
+
+        <!-- Taking the quiz -->
+        <div id="quizForm" style="display:none;"></div>
+        <button id="submitQuizBtn" class="cacc entry-submit-btn" style="display:none;">Submit Answers</button>
+        <p id="quizMsg" class="write-msg" style="display:none;"></p>
+
+        <!-- Waiting for partner -->
+        <div id="waitingState" style="display:none;" class="quiz-waiting">
+          <i class='bx bx-time-five'></i>
+          <p>You're done! Waiting for your partner to finish their quiz.</p>
+        </div>
+
+        <!-- Results -->
+        <div id="resultsState" style="display:none;">
+          <div class="quiz-score">
+            <p class="timer-label-huge">You matched on</p>
+            <p class="timer-value-huge" id="scoreText">-- / --</p>
+          </div>
+          <div id="comparisonList" class="entries-list"></div>
+          <button id="retakeBtn" class="cacc entry-submit-btn">Retake Quiz</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="decor.js"></script>
+    <script src="profile.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>

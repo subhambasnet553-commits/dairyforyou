@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+   <div class="login_page">
+    <form id="loginForm">
+      <div>
+        <p class="title">Login</p>
+      </div>
+      <div>
+        <input type="email" placeholder="Email" required class="username" id="email">
+       <i class='bx bx-user'></i>
+      </div>
+    <div>
+      <input type="password" placeholder="Password" required class="password" id="password">
+      <i class="bx bx-lock"></i>
+    </div>
+    <div class="remember">
+      <label><input type="checkbox" id="rememberMe"> Remember me</label>
+    </div>
+    <p id="errorMsg" style="color: #ffb3b3; font-size: 13px; margin-left: 50px; display: none;"></p>
+    <div>
+    <button type="submit" class="login">Login</button>
+    </div>
+    <div>
+      <p class="noacc">Dont have an account? <a href="register.html">Sign up</a></p>
+    </div>
+    </form>
+    <div class="legal-footer-links">
+      <a href="terms.html">Terms</a>·<a href="privacy.html">Privacy</a>·<a href="copyright.html">Copyright</a>
+    </div>
+   </div>
+
+   <script src="decor.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>

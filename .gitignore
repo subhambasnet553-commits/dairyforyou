@@ -1,0 +1,14 @@
+# Never upload your real secrets
+.env
+
+# Dependency folders — these get reinstalled from package.json, no need to upload them
+node_modules/
+backend/node_modules/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+npm-debug.log*
